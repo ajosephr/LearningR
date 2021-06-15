@@ -1,6 +1,6 @@
 
 
-# LearningR:Practicing awesomeness :D
+# LearningR:Practicing amazingness :D
 
 This is for the DDA R course.
 
