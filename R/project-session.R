@@ -1,5 +1,9 @@
 source(here::here("R/package-loading.R"))
 
+?colnames
+
+help(colnames)
+
 # Basics of R -------------------------------------------------------------
 
 weight_kilos <-100
