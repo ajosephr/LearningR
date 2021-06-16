@@ -130,6 +130,21 @@ nhanes_update <- nhanes_small %>%
            highly_active = if_else(phys_active_days >= 5, "Yes", "No"))
 str(nhanes_update)
 
+##Summary statistics by group
+
+nhanes_small %>%
+    summarise(max_bmi = max(bmi))
+
+nhanes_small %>%
+    summarise(max_bmi = max(bmi, na.rm = TRUE))
+# find out how many missing values (NAs) are there
+nhanes_small %>%
+    summarise(sum_na = sum(is.na(bmi)))
+
+#calculating 2 summary statistics
+nhanes_small %>%
+    summarise(max_bmi = max(bmi, na.rm = TRUE),
+              min_bmi = min(bmi, na.rm = TRUE))
 
 
 
